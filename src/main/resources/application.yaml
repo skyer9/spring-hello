@@ -1,0 +1,13 @@
+app:
+  static-base-url: http://localhost:8081   # 로컬 개발용 기본값
+  version: local
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      probes:
+        enabled: true        # /actuator/health/liveness, /readiness 활성화

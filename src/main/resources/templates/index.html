@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Hello</title>
+    <link rel="stylesheet" th:href="${staticBaseUrl + '/css/style.css'}">
+</head>
+<body>
+<main class="card">
+    <img th:src="${staticBaseUrl + '/img/logo.png'}" alt="logo" class="logo">
+    <h1>Hello, World!</h1>
+    <p>version : <span th:text="${version}">local</span></p>
+    <p>pod : <span th:text="${hostname}">local</span></p>
+</main>
+</body>
+</html>
